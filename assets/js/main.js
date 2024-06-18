@@ -89,16 +89,21 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 300,
+    //previously it was 2500  
+    duration: 1000,
+    //previously it was 300 changing to 150
+    delay: 150,
     reset: true, //to repeat animations
 });
 
 sr.reveal('.home__data, .favorites__container, .footer__container')
-sr.reveal('.home__circle, .home__img', {delay: 600, scale: 0.5})
-sr.reveal('.home__chips-1, .home__chips-2, .home__chips-3', {delay: 1000, interval: 100})
+//changing from 600
+sr.reveal('.home__circle, .home__img', {delay: 400, scale: 0.5})
+// changing from 1000delay
+sr.reveal('.home__chips-1, .home__chips-2, .home__chips-3', {delay: 700, interval: 100})
 sr.reveal('.home__leaf',{delay: 1200})
-sr.reveal('.home__tomato-1, .home__tomato-2', {delay: 1400, interval: 100})
+//changing from 1400delay
+sr.reveal('.home__tomato-1, .home__tomato-2', {delay: 1000, interval: 100})
 sr.reveal('.care__image, .contact__img',{origin: 'left'})
 sr.reveal('.care__list, .contact__data',{origin: 'right'})
 sr.reveal('.banner__items, .products__card',{interval: 100})
