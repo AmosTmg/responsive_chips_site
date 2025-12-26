@@ -1,1 +1,5 @@
-Credits  BedimCode https://github.com/bedimcode
+preview: 
+
+![Demo Image](assets/img/demo.png)
+
+live site: https://healthy-chips.netlify.app/
